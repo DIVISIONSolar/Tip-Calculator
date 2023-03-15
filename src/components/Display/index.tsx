@@ -33,6 +33,15 @@ const Display = (props: Props) => {
               ${total}
             </h1>
           </article>
+          <article className="flex justify-between items-center">
+            <h1 className="text-xs font-bold flex flex-col items-center">
+              Total
+              <span className="text-light-grayish-cyan">Total Bill</span>
+            </h1>
+            <h1 className="text-5xl text-strong-cyan font-extrabold overflow-hidden">
+              ${NaN}
+            </h1>
+          </article>
         </span>
 
         <button
