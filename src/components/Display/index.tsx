@@ -7,7 +7,7 @@ type Props = {};
 const Display = (props: Props) => {
   const dispatch = useDispatch();
   const calculatorState = useSelector((state: any) => state.calculator);
-  const { tipAmount, total } = calculatorState;
+  const { tipAmount, total, totalbill } = calculatorState;
   const reset = () => {
     dispatch(calculatorActions.resetCalculator());
   };
@@ -39,7 +39,7 @@ const Display = (props: Props) => {
               <span className="text-light-grayish-cyan">Total Bill</span>
             </h1>
             <h1 className="text-5xl text-strong-cyan font-extrabold overflow-hidden">
-              ${NaN}
+              ${totalbill}
             </h1>
           </article>
         </span>

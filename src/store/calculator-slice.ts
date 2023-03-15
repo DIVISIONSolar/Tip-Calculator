@@ -9,6 +9,7 @@ const calculatorSlice = createSlice({
     inputNumberPeople: 0,
     tipAmount: 0,
     total: 0,
+    totalbill: 0,
   },
   //reducers are basically set operations/functions we perform to thr initial state by doing some actions
   reducers: {
@@ -41,6 +42,16 @@ const calculatorSlice = createSlice({
       }
       state.total = action.payload;
     },
+    
+    //this is a reducer function which will return the calculated total bill of everything
+
+    calculateTotalbill(state, action) {
+      if (state.inputNumberPeople === 0 || state.selectTip === 0) {
+        state.totalbill = 0;
+        return;
+      }
+      state.total = action.payload;
+    },
     //this reducer will reset all the ovrided states and make them null/initial
     resetCalculator(state) {
       state.inputBill = 0;
@@ -48,6 +59,7 @@ const calculatorSlice = createSlice({
       state.inputNumberPeople = 0;
       state.tipAmount = 0;
       state.total = 0;
+      state.totalbill = 0;
     },
   },
 });
