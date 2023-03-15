@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(https://fonts.bunny.net/css?family=abril-fatface:400|rubik:600,800i,900i);
+
+* {
+  margin: 0;
+  font-family: "Abril Fatface", display;
+  font-family: "Rubik", sans-serif;
+}
