@@ -8,7 +8,7 @@ const Layout = (props: Props) => {
         <Card />
         <footer className='text-center text-black font-abril-fatface font-rubik text-lg mt-12'>
           <p>Created by: <a className='font-bold' href='https://joshsevero.dev'>Josh Severo</a></p>
-          <p>Open Source on: <a className='font-bold' href='https://github.com/DIVISIONSolar/Weather-App'>Github</a></p>
+          <p>Open Source on: <a className='font-bold' href='https://github.com/DIVISIONSolar/Tip-Calculator'>Github</a></p>
         </footer>
       </main>
     </>
