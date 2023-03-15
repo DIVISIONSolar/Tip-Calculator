@@ -18,7 +18,7 @@ const Display = (props: Props) => {
           <article className="flex justify-between items-center ">
             <h1 className="text-xs font-bold flex flex-col items-center">
               Tip Amount
-              <span className="text-light-grayish-cyan">/ person</span>
+              <span className="text-light-grayish-cyan">Per person</span>
             </h1>
             <h1 className="text-5xl text-strong-cyan font-extrabold overflow-hidden">
               ${tipAmount}
@@ -27,7 +27,7 @@ const Display = (props: Props) => {
           <article className="flex justify-between items-center">
             <h1 className="text-xs font-bold flex flex-col items-center">
               Total
-              <span className="text-light-grayish-cyan">/ person</span>
+              <span className="text-light-grayish-cyan">Per person</span>
             </h1>
             <h1 className="text-5xl text-strong-cyan font-extrabold overflow-hidden">
               ${total}
